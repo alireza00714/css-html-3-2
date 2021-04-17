@@ -16,40 +16,70 @@ body {
 .head {
   background-image: url(./1.jpg);
   height: 45%;
+}
+
+
+.main{
+  padding: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.content{
+  width: 22%;
+  height: max-content;
+  background-color: white;
   display: flex;
   flex-direction: column;
-  padding: 0 15%;
+  box-shadow: 0px 18px 34px -25px rgba(0,0,0,0.75);
+  margin: 0 0 3% 0;
 }
-.nav {
+
+.content > img{
   width: 100%;
-  height: 50px;
-  display: flex;
-  justify-content: space-between;
-  margin: 3% 0 0 0;
 }
-.nav-items {
-  display: flex;
-  justify-content: space-between;
+.summary{
   font-family: "worksans";
-}
-.nav-items > span {
-  font-family: "worksans";
-  margin: 0 0 0 2%;
-}
-.nav-items > span,
-.nav-items > i {
-  cursor: pointer;
-  height: max-content;
-  color: white;
-}
-.logo {
-  width: 100px;
-}
-.icons{
   display: flex;
+  flex-direction: column;
+  padding: 10% 15% 0 15%;
 }
-.icons > i{
-  color: white;
-  font-size: 1.25rem;
-  margin: 0 0 0 30%;
+.summary > .date{
+  font-size: x-small;
+}
+.summary > .date{
+  color: gray;
+}
+.summary>.title{
+  margin: 0;
+}
+.summary>.description{
+  font-size: small;
+  color: gray;
+}
+.separator{
+  display: flex;
+  align-items: center;
+  padding-right: 10%;
+}
+.separator > .comments{
+  padding: 10px;
+  background-color: #f7f7f7;
+  border-radius: 100px;
+}
+.comments{
+  color: gray;
+  margin-left: 5%;
+}
+.separator > .line{
+  flex-grow: 1;
+  height: 3px;
+  background-color: #f7f7f7;
+}
+.tags{
+  padding: 0 0 0 15%;
+  font-family: "worksans";
+  font-size: small;
+  color: gray;
+  margin: 0 0 10% 0;
 }
