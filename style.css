@@ -13,70 +13,127 @@ body {
   src: url(./WorkSans-VariableFont_wght.ttf) format("truetype");
 }
 
+/* head section */
 .head {
   background-image: url(./1.jpg);
-  height: 45%;
+  font-family: "worksans";
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 2% 6% 0 6%;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  height: 10%;
+}
+.nav-left{
+  width: 20%;
+}
+.nav-left > img {
+  width: 100px;
+}
+.nav-right {
+  display: flex;
+  justify-content: flex-end;
+  width: 65%;
+  margin: 0 auto 0 0;
+}
+.nav-right > .nav-items{
+  display: flex;
+  width: max-content;
+}
+.nav-right > .nav-items > span {
+  color: white;
+  font-family: "worksans";
+  cursor: pointer;
+  margin: 0 0 0 7%;
+}
+.nav-right > .nav-icons{
+  display: flex;
+  width: max-content;
+  margin: 0 0 0 15%;
+}
+.nav-right > .nav-icons > i{
+  color: white;
+  font-size: 1.25rem;
+  margin: 0 0 0 35%;
+}
+.title{
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title > h1{
+  font-family: "worksans";
+}
+.title > h1, .title > p{
+  color: white;
 }
 
-
-.main{
+/* main section */
+.main {
   padding: 2%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.content{
+
+/* content section */
+.content {
   width: 22%;
   height: max-content;
   background-color: white;
   display: flex;
   flex-direction: column;
-  box-shadow: 0px 18px 34px -25px rgba(0,0,0,0.75);
+  box-shadow: 0px 18px 34px -25px rgba(0, 0, 0, 0.75);
   margin: 0 0 3% 0;
 }
 
-.content > img{
+.content > img {
   width: 100%;
 }
-.summary{
+.summary {
   font-family: "worksans";
   display: flex;
   flex-direction: column;
   padding: 10% 15% 0 15%;
 }
-.summary > .date{
+.summary > .date {
   font-size: x-small;
 }
-.summary > .date{
+.summary > .date {
   color: gray;
 }
-.summary>.title{
+.summary > .title {
   margin: 0;
 }
-.summary>.description{
+.summary > .description {
   font-size: small;
   color: gray;
 }
-.separator{
+.separator {
   display: flex;
   align-items: center;
   padding-right: 10%;
 }
-.separator > .comments{
+.separator > .comments {
   padding: 10px;
   background-color: #f7f7f7;
   border-radius: 100px;
 }
-.comments{
+.comments {
   color: gray;
   margin-left: 5%;
 }
-.separator > .line{
+.separator > .line {
   flex-grow: 1;
   height: 3px;
   background-color: #f7f7f7;
 }
-.tags{
+.tags {
   padding: 0 0 0 15%;
   font-family: "worksans";
   font-size: small;
