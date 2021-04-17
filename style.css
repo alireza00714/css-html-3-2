@@ -27,7 +27,7 @@ body {
   justify-content: space-between;
   height: 10%;
 }
-.nav-left{
+.nav-left {
   width: 20%;
 }
 .nav-left > img {
@@ -39,7 +39,7 @@ body {
   width: 65%;
   margin: 0 auto 0 0;
 }
-.nav-right > .nav-items{
+.nav-right > .nav-items {
   display: flex;
   width: max-content;
 }
@@ -49,27 +49,29 @@ body {
   cursor: pointer;
   margin: 0 0 0 7%;
 }
-.nav-right > .nav-icons{
+.nav-right > .nav-icons {
   display: flex;
   width: max-content;
   margin: 0 0 0 15%;
 }
-.nav-right > .nav-icons > i{
+.nav-right > .nav-icons > i {
   color: white;
   font-size: 1.25rem;
   margin: 0 0 0 35%;
+  cursor: pointer;
 }
-.title{
+.title {
   margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.title > h1{
+.title > h1 {
   font-family: "worksans";
 }
-.title > h1, .title > p{
+.title > h1,
+.title > p {
   color: white;
 }
 
@@ -139,4 +141,51 @@ body {
   font-size: small;
   color: gray;
   margin: 0 0 10% 0;
+}
+
+/* laptop - layout */
+@media screen and (max-width: 1280px) and (min-width: 1024px) {
+  .nav-right{
+    margin: 0 10% 0 0;
+  }
+  .nav-right > .nav-icons {
+    margin: 0 0 0 25%;
+  }
+}
+
+/* Tablet - layout */
+@media screen and (max-width: 1024px) and (min-width: 600px) {
+  .head{
+    padding: 10% 0 0 0;
+  }
+  .nav-left{
+    margin: 0 auto 0 auto;
+    width: max-content;
+  }
+  .nav-right{
+    display: none;
+  }
+  .content {
+    width: 49%;
+    margin: 0 0 5% 0;
+  }
+  
+}
+
+/* Mobile - layout */
+@media screen and (max-width: 599px) and (min-width: 280px) {
+  .head{
+    padding: 10% 0 0 0;
+  }
+  .nav-left{
+    margin: auto;
+    width: max-content;
+  }
+  .nav-right{
+    display: none;
+  }
+  .content {
+    width: 98%;
+    margin: 0 0 8% 0;
+  }
 }
